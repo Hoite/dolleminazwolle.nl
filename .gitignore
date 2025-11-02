@@ -1,0 +1,19 @@
+# Ignore everything by default
+/*
+
+# Allow only app, Kubernetes manifests, and the main README
+!.gitignore
+!README.md
+!app.py
+!requirements.txt
+!Dockerfile
+
+# Templates and static assets
+!templates/
+!templates/**
+!static/
+!static/**
+
+# Kubernetes manifests
+!k8s/
+!k8s/**

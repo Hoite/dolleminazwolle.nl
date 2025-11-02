@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Adlery Pro Blockletter';
+    src: url('../fonts/Adlery-Pro-Blockletter-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D2C0DF;
+    font-family: 'Adlery Pro Blockletter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.main-text {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 2rem;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+
+.image-placeholder {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-link {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.instagram-link:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.instagram-logo {
+    width: 60px;
+    height: 60px;
+    color: #000000;
+}
+
+/* Call-to-action */
+.cta {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+.cta p {
+    font-size: 1.25rem;
+    color: #000000;
+    margin: 0.75rem 0;
+}
+
+.cta a {
+    color: #005cc3;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1rem;
+    background-color: #005cc3;
+    color: #ffffff !important;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.92;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .main-text {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .instagram-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .cta p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .main-text {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .instagram-logo {
+        width: 40px;
+        height: 40px;
+    }
+    .cta p {
+        font-size: 1rem;
+    }
+}
